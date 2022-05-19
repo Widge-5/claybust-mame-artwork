@@ -1,0 +1,49 @@
+<!-- claybust.lay -->
+
+<mamelayout version="2">
+	<element name="bezel">
+		<image file="claybust_bez.png" />
+	</element>
+	<element name="backdrop">
+		<image file="claybust_bd.png" />
+	</element>
+	<element name="bezel43">
+		<image file="claybust_bez_43.png" />
+	</element>
+	<element name="backdrop43">
+		<image file="claybust_bd_43.png" />
+	</element>
+	<view name="Artwork_Standard">
+		<screen index="0">
+			<bounds x="0" y="0" width="1440" height="1080" />
+		</screen>
+		<backdrop element="backdrop43">
+			<bounds x="0" y="0" width="1440" height="1080" />
+			<color alpha="1" />
+		</backdrop>
+		<bezel element="bezel43">
+			<bounds x="0" y="0" width="1440" height="1080" />
+		</bezel>
+	</view>
+	<view name="Artwork_Wide">
+		<screen index="0">
+			<bounds x="0" y="0" width="1440" height="1080" />
+		</screen>
+		<backdrop element="backdrop">
+			<bounds x="-240" y="0" width="1920" height="1080" />
+			<color alpha="1" />
+		</backdrop>
+		<bezel element="bezel">
+			<bounds x="-240" y="0" width="1920" height="1080" />
+		</bezel>
+	</view>
+</mamelayout>
+
+<!--
+
+- Artwork type: Bezel, Backdrop
+- Hut artwork by Coolname
+- Lay file by Widge
+- Scenery artwork from various sources obtained in the public domain.
+- Original logos, artwork and trademarks are property of their respective owners.
+-->
