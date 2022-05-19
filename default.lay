@@ -1,59 +1,65 @@
-<!-- claybust.lay -->
+<!-- blueshrk.lay -->
 
 <mamelayout version="2">
+
 
 <!-- Define Elements -->
 
 	<element name="bezel">
-		<image file="claybust_bez.png" />
+		<image file="blue_shark_bezel.png" />
 	</element>
 	<element name="backdrop">
-		<image file="claybust_bd.png" />
-	</element>
-	<element name="bezel43">
-		<image file="claybust_bez_43.png" />
-	</element>
-	<element name="backdrop43">
-		<image file="claybust_bd_43.png" />
+		<image file="blueshrk_bd.png" />
 	</element>
 
 
 <!-- Define Groups -->
 
 
+
 <!-- Define Views -->
 
-	<view name="Artwork_Standard">
-		<element ref="backdrop43">
-			<bounds x="0" y="0" width="1440" height="1080" />
-			<color alpha="1" />
+	<view name="Upright_Artwork">
+		<element ref="backdrop">
+			<bounds x="750" y="1755" width="2400" height="1350" />
+			<color alpha="0.6" />
 		</element>
 		<screen index="0" blend="add">
-			<bounds x="0" y="0" width="1440" height="1080" />
+			<bounds x="1050" y="1755" width="1800" height="1350" />
 		</screen>
-		<element ref="bezel43">
-			<bounds x="0" y="0" width="1440" height="1080" />
+		<element ref="bezel" blend="add">
+			<bounds x="0" y="0" width="3894" height="4000" />
 		</element>
 	</view>
 
-	<view name="Artwork_Wide">
+	<view name="Backdrop_Artwork">
 		<element ref="backdrop">
-			<bounds x="-240" y="0" width="1920" height="1080" />
-			<color alpha="1" />
+			<bounds x="0" y="0" width="1800" height="1350" />
+			<color alpha="0.6" />
 		</element>
 		<screen index="0" blend="add">
-			<bounds x="0" y="0" width="1440" height="1080" />
+			<bounds x="0" y="0" width="1800" height="1350" />
 		</screen>
-		<element ref="bezel">
-			<bounds x="-240" y="0" width="1920" height="1080" />
+	</view>
+
+	<view name="Backdrop_Artwork_Wide">
+		<element ref="backdrop">
+			<bounds x="-300" y="0" width="2400" height="1350" />
+			<color alpha="0.6" />
 		</element>
+		<screen index="0" blend="add">
+			<bounds x="0" y="0" width="1800" height="1350" />
+		</screen>
 	</view>
 </mamelayout>
 
 <!--
-- Artwork type: Bezel, Backdrop
-- Hut artwork by Coolname
-- Lay file by Widge
-- Scenery artwork from various sources obtained in the public domain.
-- Version 2.0 (slightly reworked to eliminate deprecated "backdrop" and "Bezel" types)
+- Artwork type: Bezel
+- Scanned bezel provided by zorg
+- Vectored for MAME by zorg   ((but the file is a png, not svg ?? - Widge))
+- Lay file by Mr. Do
+
+- Application of Backdrop for Blue Shark by Widge, May 2022
+- Version 2.0 (slightly reworked to eliminate deprecated "backdrop" and "bezel" types)
+- Original logos, artwork and trademarks are property of their respective owners.
 -->
