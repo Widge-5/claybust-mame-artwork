@@ -3,7 +3,6 @@
 Artwork for use with "ClayBuster" (claybust) in mame
 
 Version 2
-for use with Mame 2016
 
 - Artwork type: Bezel, Backdrop
 - Hut artwork by Coolname
