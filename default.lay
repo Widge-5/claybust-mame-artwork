@@ -1,6 +1,9 @@
 <!-- claybust.lay -->
 
 <mamelayout version="2">
+
+<!-- Define Elements -->
+
 	<element name="bezel">
 		<image file="claybust_bez.png" />
 	</element>
@@ -13,37 +16,44 @@
 	<element name="backdrop43">
 		<image file="claybust_bd_43.png" />
 	</element>
+
+
+<!-- Define Groups -->
+
+
+<!-- Define Views -->
+
 	<view name="Artwork_Standard">
-		<screen index="0">
-			<bounds x="0" y="0" width="1440" height="1080" />
-		</screen>
-		<backdrop element="backdrop43">
+		<element ref="backdrop43">
 			<bounds x="0" y="0" width="1440" height="1080" />
 			<color alpha="1" />
-		</backdrop>
-		<bezel element="bezel43">
+		</element>
+		<screen index="0" blend="add">
 			<bounds x="0" y="0" width="1440" height="1080" />
-		</bezel>
+		</screen>
+		<element ref="bezel43">
+			<bounds x="0" y="0" width="1440" height="1080" />
+		</element>
 	</view>
+
 	<view name="Artwork_Wide">
-		<screen index="0">
-			<bounds x="0" y="0" width="1440" height="1080" />
-		</screen>
-		<backdrop element="backdrop">
+		<element ref="backdrop">
 			<bounds x="-240" y="0" width="1920" height="1080" />
 			<color alpha="1" />
-		</backdrop>
-		<bezel element="bezel">
+		</element>
+		<screen index="0" blend="add">
+			<bounds x="0" y="0" width="1440" height="1080" />
+		</screen>
+		<element ref="bezel">
 			<bounds x="-240" y="0" width="1920" height="1080" />
-		</bezel>
+		</element>
 	</view>
 </mamelayout>
 
 <!--
-
 - Artwork type: Bezel, Backdrop
 - Hut artwork by Coolname
 - Lay file by Widge
 - Scenery artwork from various sources obtained in the public domain.
-- Original logos, artwork and trademarks are property of their respective owners.
+- Version 2.0 (slightly reworked to eliminate deprecated "backdrop" and "Bezel" types)
 -->
