@@ -1,65 +1,52 @@
-<!-- blueshrk.lay -->
+<!-- claybust.lay -->
 
 <mamelayout version="2">
-
 
 <!-- Define Elements -->
 
 	<element name="bezel">
-		<image file="blue_shark_bezel.png" />
+		<image file="claybust_bez.png" />
 	</element>
 	<element name="backdrop">
-		<image file="blueshrk_bd.png" />
+		<image file="claybust_bd.png" />
+	</element>
+	<element name="water">
+		<image file="lake.png" />
 	</element>
 
 
 <!-- Define Groups -->
 
 
-
 <!-- Define Views -->
 
-	<view name="Upright_Artwork">
+	<view name="Artwork_Scenery">
 		<element ref="backdrop">
-			<bounds x="750" y="1755" width="2400" height="1350" />
-			<color alpha="0.6" />
+			<bounds x="-240" y="0" width="1920" height="1080" />
+			<color alpha="1" />
 		</element>
 		<screen index="0" blend="add">
-			<bounds x="1050" y="1755" width="1800" height="1350" />
+			<bounds x="0" y="0" width="1440" height="1080" />
 		</screen>
-		<element ref="bezel" blend="add">
-			<bounds x="0" y="0" width="3894" height="4000" />
+		<element ref="water">
+			<bounds x="-240" y="0" width="1920" height="1080" />
+			<color alpha="0.9" />
+		</element>
+		<element ref="bezel">
+			<bounds x="-240" y="0" width="1920" height="1080" />
+			<color alpha="1" />
 		</element>
 	</view>
 
-	<view name="Backdrop_Artwork">
-		<element ref="backdrop">
-			<bounds x="0" y="0" width="1800" height="1350" />
-			<color alpha="0.6" />
-		</element>
-		<screen index="0" blend="add">
-			<bounds x="0" y="0" width="1800" height="1350" />
-		</screen>
-	</view>
-
-	<view name="Backdrop_Artwork_Wide">
-		<element ref="backdrop">
-			<bounds x="-300" y="0" width="2400" height="1350" />
-			<color alpha="0.6" />
-		</element>
-		<screen index="0" blend="add">
-			<bounds x="0" y="0" width="1800" height="1350" />
-		</screen>
-	</view>
 </mamelayout>
 
 <!--
-- Artwork type: Bezel
-- Scanned bezel provided by zorg
-- Vectored for MAME by zorg   ((but the file is a png, not svg ?? - Widge))
-- Lay file by Mr. Do
-
-- Application of Backdrop for Blue Shark by Widge, May 2022
-- Version 2.0 (slightly reworked to eliminate deprecated "backdrop" and "bezel" types)
+- Artwork type: Bezel, backdrop
+- Hut artwork by Coolname
+- Lay file by Widge
+- Scenery artwork from various sources obtained under Creative Commons Licence
 - Original logos, artwork and trademarks are property of their respective owners.
+- Version 2 (slightly reworked to eliminate deprecated "backdrop" and "Bezel" types)
+- Removed Standard (4:3) option in favour of the wide backdrop and bezel view as MAME's "Zoom to Screen Area" option has the same effect.
+- V 2.2 - Separated the water from the bezel in order to apply a semi-transperancy to allow the animated graphic to make the water seem "alive". Also  cleaned up some of the bezel edges.
 -->
