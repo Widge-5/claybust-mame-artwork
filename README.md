@@ -14,4 +14,6 @@ Version 2.02
 - V 2.2 - Separated the water from the bezel in order to apply a semi-transperancy to allow the animated graphic to make the water seem "alive". Also  cleaned up some of the bezel edges.
 
 
-(download file claybust.zip and place in your mame artwork folder)
+(download file claybust.zip and place in your mame artwork folder).
+
+If you're using Mame2016 or earlier yo should use the Version 1 artwork file instead.
