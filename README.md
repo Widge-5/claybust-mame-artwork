@@ -15,3 +15,4 @@ Version 2.02
 
 
 (download file claybust.zip and place in your mame artwork folder)
+If you're using Mame2016 or earlier yo should use the Version 1 aartwork instead
